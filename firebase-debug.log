@@ -1,0 +1,452 @@
+[debug] [2021-10-30T15:42:51.555Z] ----------------------------------------------------------------------
+[debug] [2021-10-30T15:42:51.561Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:gestionNetworking
+[debug] [2021-10-30T15:42:51.562Z] CLI Version:   9.21.0
+[debug] [2021-10-30T15:42:51.562Z] Platform:      win32
+[debug] [2021-10-30T15:42:51.562Z] Node Version:  v14.17.6
+[debug] [2021-10-30T15:42:51.564Z] Time:          Sat Oct 30 2021 12:42:51 GMT-0300 (hora estándar de Argentina)
+[debug] [2021-10-30T15:42:51.564Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-30T15:42:51.717Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-30T15:42:51.717Z] > authorizing via signed-in user (arominamoreno@gmail.com)
+[debug] [2021-10-30T15:42:51.718Z] [iam] checking project gestionnetworking-26e8f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-30T15:42:51.723Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-30T15:42:51.723Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-30T15:42:52.037Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 30 Oct 2021 15:42:54 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T15:42:52.171Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/gestionnetworking-26e8f:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-10-30T15:42:53.125Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 30 Oct 2021 15:42:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=824","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T15:42:53.129Z] > refreshing access token with scopes: []
+[debug] [2021-10-30T15:42:53.130Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-30T15:42:53.300Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 30 Oct 2021 15:42:55 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T15:42:53.410Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f [none]
+[debug] [2021-10-30T15:42:53.846Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f 200
+[debug] [2021-10-30T15:42:53.848Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f {"projectId":"gestionnetworking-26e8f","projectNumber":"599941347250","displayName":"gestionNetworking","name":"projects/gestionnetworking-26e8f","resources":{"hostingSite":"gestionnetworking-26e8f","storageBucket":"gestionnetworking-26e8f.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'gestionnetworking-26e8f'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-10-30T15:42:53.874Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-30T15:42:53.875Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-30T15:42:54.027Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 30 Oct 2021 15:42:56 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T15:42:54.088Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/gestionNetworking/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-10-30T15:42:55.082Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sat, 30 Oct 2021 15:42:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T15:42:55.083Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-10-30T15:42:55.275Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Sat, 30 Oct 2021 15:42:57 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/gestionNetworking/versions",
+        "path": "/v1beta1/sites/gestionNetworking/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/gestionNetworking/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-10-30T15:47:48.639Z] ----------------------------------------------------------------------
+[debug] [2021-10-30T15:47:48.644Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-10-30T15:47:48.645Z] CLI Version:   9.21.0
+[debug] [2021-10-30T15:47:48.645Z] Platform:      win32
+[debug] [2021-10-30T15:47:48.645Z] Node Version:  v14.17.6
+[debug] [2021-10-30T15:47:48.647Z] Time:          Sat Oct 30 2021 12:47:48 GMT-0300 (hora estándar de Argentina)
+[debug] [2021-10-30T15:47:48.648Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-30T15:47:48.806Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-30T15:47:48.806Z] > authorizing via signed-in user (arominamoreno@gmail.com)
+[debug] [2021-10-30T15:47:48.807Z] [iam] checking project gestionnetworking-26e8f for permissions ["firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2021-10-30T15:47:48.812Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/gestionnetworking-26e8f:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2021-10-30T15:47:49.828Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 30 Oct 2021 15:47:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=755","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T15:47:49.836Z] > refreshing access token with scopes: []
+[debug] [2021-10-30T15:47:49.836Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-30T15:47:50.027Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sat, 30 Oct 2021 15:47:52 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T15:47:50.777Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f [none]
+[debug] [2021-10-30T15:47:51.930Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f 200
+[debug] [2021-10-30T15:47:51.931Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f {"projectId":"gestionnetworking-26e8f","projectNumber":"599941347250","displayName":"gestionNetworking","name":"projects/gestionnetworking-26e8f","resources":{"hostingSite":"gestionnetworking-26e8f","storageBucket":"gestionnetworking-26e8f.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'gestionnetworking-26e8f'...
+[info] 
+[info] i  deploying storage, hosting 
+[debug] [2021-10-30T15:47:51.943Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-30T15:47:51.944Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-30T15:47:52.120Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 30 Oct 2021 15:47:54 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T15:47:52.546Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/gestionnetworking-26e8f  
+ 
+[debug] [2021-10-30T15:47:53.393Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 30 Oct 2021 15:47:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  firebase.storage: checking storage.rules for compilation errors... 
+[debug] [2021-10-30T15:47:53.397Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/gestionnetworking-26e8f:test  
+ {"source":{"files":[{"name":"storage.rules","content":"rules_version = '2';\nservice firebase.storage {\n  match /b/{bucket}/o {\n    match /{allPaths=**} {\n      allow read, write: if request.auth!=null;\n    }\n  }\n}\n"}]}}
+[debug] [2021-10-30T15:47:54.364Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 30 Oct 2021 15:47:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  firebase.storage: rules file storage.rules compiled successfully 
+[debug] [2021-10-30T15:47:54.373Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/gestionNetworking/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-10-30T15:47:55.527Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sat, 30 Oct 2021 15:47:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T15:47:55.527Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-10-30T15:47:55.713Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Sat, 30 Oct 2021 15:47:58 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/gestionNetworking/versions",
+        "path": "/v1beta1/sites/gestionNetworking/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/gestionNetworking/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-10-30T15:54:54.534Z] ----------------------------------------------------------------------
+[debug] [2021-10-30T15:54:54.542Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-10-30T15:54:54.543Z] CLI Version:   9.21.0
+[debug] [2021-10-30T15:54:54.544Z] Platform:      win32
+[debug] [2021-10-30T15:54:54.544Z] Node Version:  v14.17.6
+[debug] [2021-10-30T15:54:54.639Z] Time:          Sat Oct 30 2021 12:54:54 GMT-0300 (hora estándar de Argentina)
+[debug] [2021-10-30T15:54:54.639Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-30T15:54:54.854Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-30T15:54:54.855Z] > authorizing via signed-in user (arominamoreno@gmail.com)
+[debug] [2021-10-30T15:54:54.855Z] [iam] checking project gestionnetworking-26e8f for permissions ["firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2021-10-30T15:54:54.897Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/gestionnetworking-26e8f:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2021-10-30T15:54:56.024Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 30 Oct 2021 15:54:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=736","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T15:54:56.031Z] > refreshing access token with scopes: []
+[debug] [2021-10-30T15:54:56.032Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-30T15:54:56.243Z] <<< HTTP RESPONSE 200 {"date":"Sat, 30 Oct 2021 15:54:58 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T15:54:56.406Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f [none]
+[debug] [2021-10-30T15:54:57.680Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f 200
+[debug] [2021-10-30T15:54:57.681Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f {"projectId":"gestionnetworking-26e8f","projectNumber":"599941347250","displayName":"gestionNetworking","name":"projects/gestionnetworking-26e8f","resources":{"hostingSite":"gestionnetworking-26e8f","storageBucket":"gestionnetworking-26e8f.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'gestionnetworking-26e8f'...
+[info] 
+[info] i  deploying storage, hosting 
+[debug] [2021-10-30T15:54:57.694Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-30T15:54:57.694Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-30T15:54:57.851Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sat, 30 Oct 2021 15:55:00 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T15:54:57.947Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/gestionnetworking-26e8f  
+ 
+[debug] [2021-10-30T15:54:58.767Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 30 Oct 2021 15:55:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  firebase.storage: checking storage.rules for compilation errors... 
+[debug] [2021-10-30T15:54:58.775Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/gestionnetworking-26e8f:test  
+ {"source":{"files":[{"name":"storage.rules","content":"rules_version = '2';\nservice firebase.storage {\n  match /b/{bucket}/o {\n    match /{allPaths=**} {\n      allow read, write: if request.auth!=null;\n    }\n  }\n}\n"}]}}
+[debug] [2021-10-30T15:54:59.746Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 30 Oct 2021 15:55:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  firebase.storage: rules file storage.rules compiled successfully 
+[debug] [2021-10-30T15:54:59.760Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/gestionNetworking/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-10-30T15:55:00.752Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sat, 30 Oct 2021 15:55:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T15:55:00.753Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-10-30T15:55:01.011Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Sat, 30 Oct 2021 15:55:03 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/gestionNetworking/versions",
+        "path": "/v1beta1/sites/gestionNetworking/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/gestionNetworking/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-10-30T16:03:47.083Z] ----------------------------------------------------------------------
+[debug] [2021-10-30T16:03:47.089Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:gestionNetworking
+[debug] [2021-10-30T16:03:47.090Z] CLI Version:   9.21.0
+[debug] [2021-10-30T16:03:47.091Z] Platform:      win32
+[debug] [2021-10-30T16:03:47.091Z] Node Version:  v14.17.6
+[debug] [2021-10-30T16:03:47.096Z] Time:          Sat Oct 30 2021 13:03:47 GMT-0300 (hora estándar de Argentina)
+[debug] [2021-10-30T16:03:47.097Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-30T16:03:47.274Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-30T16:03:47.275Z] > authorizing via signed-in user (arominamoreno@gmail.com)
+[debug] [2021-10-30T16:03:47.276Z] [iam] checking project gestionnetworking-26e8f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-30T16:03:47.282Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/gestionnetworking-26e8f:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-10-30T16:03:48.285Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 30 Oct 2021 16:03:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=752","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T16:03:48.290Z] > refreshing access token with scopes: []
+[debug] [2021-10-30T16:03:48.291Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-30T16:03:48.516Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 30 Oct 2021 16:03:51 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T16:03:48.614Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f [none]
+[debug] [2021-10-30T16:03:49.098Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f 200
+[debug] [2021-10-30T16:03:49.099Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f {"projectId":"gestionnetworking-26e8f","projectNumber":"599941347250","displayName":"gestionNetworking","name":"projects/gestionnetworking-26e8f","resources":{"hostingSite":"gestionnetworking-26e8f","storageBucket":"gestionnetworking-26e8f.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'gestionnetworking-26e8f'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-10-30T16:03:49.134Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-30T16:03:49.135Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-30T16:03:49.299Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 30 Oct 2021 16:03:51 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T16:03:49.372Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/gestionNetworking/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-10-30T16:03:50.366Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sat, 30 Oct 2021 16:03:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T16:03:50.366Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-10-30T16:03:50.560Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Sat, 30 Oct 2021 16:03:52 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/gestionNetworking/versions",
+        "path": "/v1beta1/sites/gestionNetworking/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/gestionNetworking/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-10-30T19:31:53.379Z] ----------------------------------------------------------------------
+[debug] [2021-10-30T19:31:53.394Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-10-30T19:31:53.396Z] CLI Version:   9.21.0
+[debug] [2021-10-30T19:31:53.396Z] Platform:      win32
+[debug] [2021-10-30T19:31:53.397Z] Node Version:  v14.17.6
+[debug] [2021-10-30T19:31:53.549Z] Time:          Sat Oct 30 2021 16:31:53 GMT-0300 (hora estándar de Argentina)
+[debug] [2021-10-30T19:31:53.550Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-30T19:31:53.958Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-30T19:31:53.958Z] > authorizing via signed-in user (arominamoreno@gmail.com)
+[debug] [2021-10-30T19:31:53.959Z] [iam] checking project gestionnetworking-26e8f for permissions ["firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2021-10-30T19:31:53.964Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-30T19:31:53.965Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-30T19:31:57.581Z] <<< HTTP RESPONSE 200 {"date":"Sat, 30 Oct 2021 19:32:00 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T19:31:57.671Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/gestionnetworking-26e8f:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2021-10-30T19:31:59.102Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 30 Oct 2021 19:32:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=748","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T19:31:59.110Z] > refreshing access token with scopes: []
+[debug] [2021-10-30T19:31:59.111Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-30T19:31:59.921Z] <<< HTTP RESPONSE 200 {"date":"Sat, 30 Oct 2021 19:32:02 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T19:32:00.034Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f [none]
+[debug] [2021-10-30T19:32:01.948Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f 200
+[debug] [2021-10-30T19:32:01.949Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gestionnetworking-26e8f {"projectId":"gestionnetworking-26e8f","projectNumber":"599941347250","displayName":"gestionNetworking","name":"projects/gestionnetworking-26e8f","resources":{"hostingSite":"gestionnetworking-26e8f","storageBucket":"gestionnetworking-26e8f.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'gestionnetworking-26e8f'...
+[info] 
+[info] i  deploying storage, hosting 
+[debug] [2021-10-30T19:32:01.969Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-30T19:32:01.971Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-30T19:32:03.706Z] <<< HTTP RESPONSE 200 {"date":"Sat, 30 Oct 2021 19:32:06 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T19:32:03.854Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/gestionnetworking-26e8f  
+ 
+[debug] [2021-10-30T19:32:07.359Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 30 Oct 2021 19:32:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  firebase.storage: checking storage.rules for compilation errors... 
+[debug] [2021-10-30T19:32:07.368Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/gestionnetworking-26e8f:test  
+ {"source":{"files":[{"name":"storage.rules","content":"rules_version = '2';\nservice firebase.storage {\n  match /b/{bucket}/o {\n    match /{allPaths=**} {\n      allow read, write: if request.auth!=null;\n    }\n  }\n}\n"}]}}
+[debug] [2021-10-30T19:32:12.354Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 30 Oct 2021 19:32:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  firebase.storage: rules file storage.rules compiled successfully 
+[debug] [2021-10-30T19:32:12.369Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/gestionNetworking/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-10-30T19:32:17.154Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sat, 30 Oct 2021 19:32:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T19:32:17.154Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-10-30T19:32:20.711Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Sat, 30 Oct 2021 19:32:19 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/gestionNetworking/versions",
+        "path": "/v1beta1/sites/gestionNetworking/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/gestionNetworking/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
